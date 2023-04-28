@@ -37,12 +37,12 @@ public class Main {
         System.out.println(listaCliente.buscarRutCliente("11111").getNombre());
         System.out.println(listaCliente.buscarRutCliente("22222").getNombre());
 
-        
     }
 
-    Cliente clienteNuevo = new Cliente(null, null, 0);
-    Cliente clienteNuevo2 = new Cliente(null, null, null, 0);
+    //Cliente clienteNuevo = new Cliente(null, null, 0);
+    //Cliente clienteNuevo2 = new Cliente(null, null, null, 0);
 
+    
     
 
 }
