@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ListaCliente {
     private Cliente[] vecCliente;
     private int cantActual;  // cantidad actual de clientes
@@ -12,7 +14,7 @@ public class ListaCliente {
 
 
     // agregar cliente
-    public boolean agregarCliente(Cliente cliente){
+    public boolean agregarCliente(Cliente clienteAgregar){
 
         // corroboramos si esta llena la lista
         if(cantActual>=max){
@@ -20,8 +22,8 @@ public class ListaCliente {
         }
 
         // si el cliente no existe lo agregamos
-        if(buscarCliente(cliente.getNombre())==null){
-            vecCliente[cantActual] = cliente;
+        if(buscarCliente(clienteAgregar.getNombre())==null){
+            vecCliente[cantActual] = clienteAgregar;
             cantActual++;
             return true;
 
@@ -31,11 +33,10 @@ public class ListaCliente {
         }
     }
 
-
+    // 
     // buscamos al cliente
     public Cliente buscarCliente(String nombre){
         for (int i = 0; i < cantActual; i++) {
-
             if(nombre.equalsIgnoreCase(vecCliente[i].getNombre())){
                 return vecCliente[i];
             }
@@ -57,6 +58,14 @@ public class ListaCliente {
     public Cliente[] getVecCliente() {
         return vecCliente;
     }
+
+
+    @Override
+    public String toString() {
+        return "ListaCliente [vecCliente=" + Arrays.toString(vecCliente) + "]";
+    }
+
+    
 
 
 }

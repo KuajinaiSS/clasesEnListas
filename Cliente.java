@@ -15,14 +15,14 @@ public class Cliente {
         this.pin = pin;
     }
 
-    
-    /* 
+
     public Cliente(String nombre, String rut, int pin) {
         this.nombre = nombre;
         this.rut = rut;
         this.pin = pin;
     }
-    */
+    
+
 
     // gets y sets (autogenerado)
     public String getNombre() {
@@ -53,9 +53,10 @@ public class Cliente {
         return pin;
     }
 
-    public void setPin(int pin) {
-        this.pin = pin;
+    public void setPin(int pinNuevo) {
+        this.pin = pinNuevo;
     }
+
 
 
     

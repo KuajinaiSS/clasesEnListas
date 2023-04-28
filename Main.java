@@ -21,7 +21,7 @@ public class Main {
         // agregar clientes a una lista de clientes
 
         // cremaos la lista clientes
-        ListaCliente listaCliente = new ListaCliente(30);
+        ListaCliente listaCliente = new ListaCliente(50);
 
         // creamos al clietne a agregar
         Cliente cliente2 = new Cliente("pedro", "11111", "su casa", 0);
@@ -36,6 +36,13 @@ public class Main {
         // buscamos a clientes en el vector
         System.out.println(listaCliente.buscarRutCliente("11111").getNombre());
         System.out.println(listaCliente.buscarRutCliente("22222").getNombre());
+
         
     }
+
+    Cliente clienteNuevo = new Cliente(null, null, 0);
+    Cliente clienteNuevo2 = new Cliente(null, null, null, 0);
+
+    
+
 }
